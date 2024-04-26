@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sugestões de receitas</title>
+        <link rel="stylesheet" href="style/receitas.css">
+    </head>
+    <body>
+        <header>
+            <nav class="flex align-center">
+                <p class="paragrafo" >
+                    <span class="paragrafo">Vinheira</span>
+                    Agnello
+                </p>
+                <ul>
+                    <li class="big-screens">
+
+                        <a href="homepage.html">Início</a>
+                        <a href="wines.html">Vinhos</a>
+                        <a href="receitas.html">Receitas</a>
+                        <a href="carrinho.html"> Carrinho</a>
+                    </li>
+                    <li class="small-screens">
+                        <i class="fa-solid fa-bars"></i>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <h2>Sugestões de receitas</h2>
+            <label for="vinhos">Selecione um vinho: </label>
+            <select name="vinhos" id="vinhos">
+                <option value="vazio" selected>Selecione aqui</option>
+                <option value="Luna-Dorata">Branco - Luna Dorata</option>
+                <option value="Incanto-Toscano">Branco - Incanto Toscano</option>
+                <option value="Charme-Provence">Branco - Charme de Provence</option>
+                <option value="Douceur-Champagne">Espumante - Douceur de Champagne</option>
+                <option value="Elegance-Loire">Espumante - Élégance de la Loire </option>
+                <option value="Vento-Veneto">Espumante - Vento del Veneto</option>
+                <option value="Dolce-Vita">Tinto - Dolce Vita</option>
+                <option value="Mare-Amore">Tinto - Mare d'Amore</option>
+                <option value="Riserva-Oro">Tinto - Riserva Oro</option>
+            </select>
+            <button onclick="gerarReceitas()">Gerar Receitas</button>
+            <div id="tituloReceitas"></div>
+            <div id="receitas">
+                <div id="receita1"></div>
+                <div id="receita2"></div>
+                <div id="receita3"></div>
+            </div>
+            
+        </div>
+        <script src="receitas.js"></script>
+    </body>
+</html>

@@ -294,8 +294,8 @@ footer a {
 .forms-contato{
   display: flex;
   flex-direction: column;
-  margin: auto;
-  margin-top: 20px;
+  margin-left: 50px;
+  margin-top: 25px;
   width: 95%;
 }
 
