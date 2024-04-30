@@ -4,9 +4,20 @@ function validarCupom() {
 
     if (cupomInput.toUpperCase() === "FIAP24") {
         cupomMsg.innerText = "Cupom válido! Desconto aplicado.";
+        animação()
     } else {
         cupomMsg.innerText = "Este cupom não é válido.";
     }
+}
+
+function animação(){
+    carrinho = document.getElementById('imagemCarinho');
+
+    carrinho.classList.add('animacao');
+
+    setTimeout(() =>{
+        carrinho.classList.remove('animacao')
+    }, "3000")
 }
 
 function calcularTotal() {
