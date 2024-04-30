@@ -213,3 +213,23 @@ footer a {
 .com ul li {
     padding: 5px 0;
 }
+
+
+#imagemCarinho{
+    position: absolute;
+    left: 55%;
+    bottom: -49%;
+    /* display: none; */
+    width: 0px;
+}
+
+
+.animacao{
+
+   animation: aniCarrinho 3s linear 0.2s infinite alternate
+}
+@keyframes aniCarrinho{
+    0% { width: 0px;}
+    50% { width: 120px;}
+    100% { width: 0px; }
+ }
